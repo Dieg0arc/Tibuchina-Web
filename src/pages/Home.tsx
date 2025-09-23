@@ -115,7 +115,7 @@ const Home: React.FC = () => {
             <CardContainer className="inter-var py-0">
               <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white dark:border-gray/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-auto rounded-xl p-6 border text-center shadow-2xl shadow-gray-400/60 transition-all duration-300">
                 <CardItem  translateZ="40" className='flex justify-center'>
-                <img src="/assets/img-c.jpg" alt="Social" />
+                <img src="/assets/img-s.jpg" alt="Social" />
                 </CardItem>
                 <CardItem
                   translateZ="50"
