@@ -9,8 +9,8 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-6">
             <div className="w-20 h-20 flex items-center justify-center">
               <img 
-                src="/tibOUCHINA.png" 
-                alt="Tibouchina Logo" 
+                src="public\assets\Tibuchina.png" 
+                alt="Tibuchina Logo" 
                 className="w-20 h-20 object-contain"
               />
             </div>
