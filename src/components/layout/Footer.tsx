@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           {/* Logo y Descripción */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-                <img src="public\assets\img-f.jpg" alt="" className='w-24 h-24 rounded-full' />
+                <img src="/assets/img-f.jpg" alt="" className="w-24 h-24 rounded-full" />
               <div>
                 <h3 className="text-xl font-bold">TIBOUCHINA</h3>
                 <p className="text-gray-400 text-sm">Corporación Ambiental, Cultural y Social</p>

@@ -59,83 +59,109 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Áreas de Trabajo */}
-      <section className="py-16 bg-green-50" >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Nuestras Áreas de Trabajo
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Card Ambiental */}
-            <CardContainer className="inter-var py-0">
-              <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white dark:border-gray/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-auto rounded-xl p-6 border text-center shadow-2xl shadow-gray-400/60 transition-all duration-300">
-                <CardItem  translateZ="40" className='flex justify-center'>
-                <img src="/assets/img-a.jpg" alt="Ambiental" />
-                </CardItem>
-                <CardItem
-                  translateZ="50"
-                  className="text-xl font-semibold text-purple-800 mb-3 dark:text-purple-800"
-                >
-                  Ambiental
-                </CardItem>
-                <CardItem
-                  as="p"
-                  translateZ="60"
-                  className="text-gray-600 text-sm max-w-sm mt-2 dark:text-gray-600"
-                >
-                  Conservación de la biodiversidad, estudios de impacto ambiental, 
-                  restauración de ecosistemas y educación ambiental.
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-            {/* Card Cultural */}
-            <CardContainer className="inter-var py-0">
-              <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white dark:border-gray/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-auto rounded-xl p-6 border text-center shadow-2xl shadow-gray-400/60 transition-all duration-300">
-                <CardItem  translateZ="40" className='flex justify-center'>
-                <img src="/assets/img-c.jpg" alt="Cultural" />
-                </CardItem>
-                <CardItem
-                  translateZ="50"
-                  className="text-xl font-semibold text-green-800 mb-3 dark:text-green-800"
-                >
-                  Cultural
-                </CardItem>
-                <CardItem
-                  as="p"
-                  translateZ="60"
-                  className="text-gray-600 text-sm max-w-sm mt-2 dark:text-gray-600"
-                >
-                  Preservación del patrimonio cultural, promoción de tradiciones locales 
-                  y desarrollo del Festival Camino del Quindío.
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-            
-            {/* Card Social */}
-            <CardContainer className="inter-var py-0">
-              <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white dark:border-gray/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-auto rounded-xl p-6 border text-center shadow-2xl shadow-gray-400/60 transition-all duration-300">
-                <CardItem  translateZ="40" className='flex justify-center'>
-                <img src="/assets/img-s.jpg" alt="Social" />
-                </CardItem>
-                <CardItem
-                  translateZ="50"
-                  className="text-xl font-semibold text--800 mb-3 dark:text-yellow-800"
-                >
-                  Social
-                </CardItem>
-                <CardItem
-                  as="p"
-                  translateZ="60"
-                  className="text-gray-600 text-sm max-w-sm mt-2 dark:text-gray-600"
-                >
-                  Proyectos de desarrollo comunitario, atención a poblaciones vulnerables 
-                  y promoción de la participación ciudadana.
-                </CardItem>
-              </CardBody>
-            </CardContainer>
+{/* Áreas de Trabajo */}
+<section className="py-16 bg-green-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      Nuestras Áreas de Trabajo
+    </h2>
+    <div className="grid md:grid-cols-3 gap-8">
+      {/* Card Ambiental */}
+      <CardContainer className="inter-var py-0">
+        <CardBody className="bg-white relative flex flex-col justify-between group/card 
+          hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] 
+          dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white 
+          dark:border-gray/[0.2] border-black/[0.1] 
+          w-full sm:w-[20rem] min-h-[24rem] rounded-xl p-6 border text-center 
+          shadow-2xl shadow-gray-400/60 transition-all duration-300">
+          
+          <CardItem translateZ="40" className="flex justify-center mb-4">
+            <img src="/assets/img-a.jpg" alt="Ambiental" className="h-54 object-cover rounded-md" />
+          </CardItem>
+          <div>
+            <CardItem
+              translateZ="50"
+              className="text-xl font-semibold text-purple-800 mb-3 dark:text-purple-800"
+            >
+              Ambiental
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-gray-600 text-sm mt-2 dark:text-gray-600"
+            >
+              Conservación de la biodiversidad, estudios de impacto ambiental, 
+              restauración de ecosistemas y educación ambiental.
+            </CardItem>
           </div>
-        </div>
-      </section>
+        </CardBody>
+      </CardContainer>
+
+      {/* Card Cultural */}
+      <CardContainer className="inter-var py-0">
+        <CardBody className="bg-white relative flex flex-col justify-between group/card 
+          hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] 
+          dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white 
+          dark:border-gray/[0.2] border-black/[0.1] 
+          w-full sm:w-[20rem] min-h-[24rem] rounded-xl p-6 border text-center 
+          shadow-2xl shadow-gray-400/60 transition-all duration-300">
+          
+          <CardItem translateZ="40" className="flex justify-center mb-4">
+            <img src="/assets/img-c.jpg" alt="Cultural" className="h-54 object-cover rounded-md" />
+          </CardItem>
+          <div>
+            <CardItem
+              translateZ="50"
+              className="text-xl font-semibold text-green-800 mb-3 dark:text-green-800"
+            >
+              Cultural
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-gray-600 text-sm mt-2 dark:text-gray-600"
+            >
+              Preservación del patrimonio cultural, promoción de tradiciones locales 
+              y desarrollo del Festival Camino del Quindío.
+            </CardItem>
+          </div>
+        </CardBody>
+      </CardContainer>
+
+      {/* Card Social */}
+      <CardContainer className="inter-var py-0">
+        <CardBody className="bg-white relative flex flex-col justify-between group/card 
+          hover:shadow-2xl hover:shadow-green-500/[0.3] hover:border-green-500/[0.5] 
+          dark:hover:shadow-2xl dark:hover:shadow-green-500/[0.3] dark:bg-white 
+          dark:border-gray/[0.2] border-black/[0.1] 
+          w-full sm:w-[20rem] min-h-[24rem] rounded-xl p-6 border text-center 
+          shadow-2xl shadow-gray-400/60 transition-all duration-300">
+          
+          <CardItem translateZ="40" className="flex justify-center mb-4">
+            <img src="/assets/img-s.jpg" alt="Social" className="h-54 object-cover rounded-md" />
+          </CardItem>
+          <div>
+            <CardItem
+              translateZ="50"
+              className="text-xl font-semibold text-yellow-800 mb-3 dark:text-yellow-800"
+            >
+              Social
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-gray-600 text-sm mt-2 dark:text-gray-600"
+            >
+              Proyectos de desarrollo comunitario, atención a poblaciones vulnerables 
+              y promoción de la participación ciudadana.
+            </CardItem>
+          </div>
+        </CardBody>
+      </CardContainer>
+    </div>
+  </div>
+</section>
+
 
       {/* Experiencia */}
       <section className="py-16 bg-green-50">
